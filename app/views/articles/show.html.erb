@@ -1,0 +1,6 @@
+<center>
+<h3><%= @article.title %><%= link_to "<i class='fa-regular fa-pen-to-square'></i>".html_safe, edit_article_path %><%= link_to "<i class='fa-solid fa-trash'></i>".html_safe, article_path, data: { turbo_method: :delete} %></h3>
+<hr width="250px">
+<p><%= @article.content %></p>
+<%= link_to 'See all articles', root_path %>
+</center>
